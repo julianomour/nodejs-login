@@ -1,0 +1,19 @@
+{
+  "name": "angular-login",
+  "version": "1.0.0",
+  "description": "APP de login com NodeJs + Angular + MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juliano Moura",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.5.0"
+  }
+}
