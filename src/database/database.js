@@ -1,7 +1,7 @@
 
 var mongoose =  require('mongoose');
-//  URI do MLab
-mongoose.connect('mongodb://admin:ADL4Fea55R9ZmPf@ds215961.mlab.com:15961/buteco-app', {useCreateIndex: true,
+//  URI do MLab Connection
+mongoose.connect('mongodb://admin:ADL4Fea55R9ZmPf@ds153593.mlab.com:53593/node-angular-login', {useCreateIndex: true,
 useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 

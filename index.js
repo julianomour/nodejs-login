@@ -12,6 +12,7 @@ const userRouter = new Router({
 require('./src/routes/user')({ userRouter });
 app.use(logger());
 
+
 router.get('/', async (ctx, next) => {
     ctx.body = await "Hello World!";
 
@@ -28,4 +29,6 @@ app.use(bodyParser());
 app.use(router.routes())
 app.use(router.allowedMethods())
 
+app.use(userRouter.routes())
+app.use(userRouter.allowedMethods())
 app.listen(3000);
