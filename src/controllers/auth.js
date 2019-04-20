@@ -36,8 +36,9 @@ module.exports.registerUser = async (ctx, next) => {
 
 module.exports.authenticate = async (ctx, next) => {
     const { email, password } = ctx.request.body;
+    console.log(email, password)
     const user = await User.findOne({ email }).select('+password');
-  
+    console.log(user)
     if ( !user ){
         ctx.response.status = 400
         ctx.response.body = { error: 'User not found' };
